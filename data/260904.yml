@@ -7,7 +7,7 @@ about:
   head: 27298b2
   archived: false
   latestVersion: critique@0.1.140
-  collectedAt: 2026-09-04T20:02:55Z
+  collectedAt: 2026-09-04T20:37:15Z
 timeline:
   created: 2025-10-08
   lastCommit: 2026-09-02
@@ -81,5 +81,43 @@ total:
   openIssue: 9
   commit: 464
 ---
+path: /home/runner/.x-repo/github.com/remorses/critique
+collectedAt: 2026-09-04T20:37:16Z
+loc:
+  TypeScript:
+    code: 13073
+    comments: 1916
+    blanks: 1936
+    files: 56
+  Tsx:
+    code: 8981
+    comments: 794
+    blanks: 1036
+    files: 18
+  Json:
+    code: 6958
+    comments: 0
+    blanks: 11
+    files: 42
+  Scheme:
+    code: 27
+    comments: 5
+    blanks: 10
+    files: 1
+  Toml:
+    code: 2
+    comments: 0
+    blanks: 0
+    files: 1
+  Markdown:
+    code: 0
+    comments: 1925
+    blanks: 721
+    files: 8
+total:
+  code: 29265
+  comments: 4698
+  blanks: 3762
+  files: 126
 ---
 
