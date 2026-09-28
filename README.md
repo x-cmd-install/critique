@@ -14,12 +14,12 @@ x install critique
 
 ## Code insight
 
-Total: **29,041** lines of code across **118** files in the top 5 languages.
+Total: **29,151** lines of code across **118** files in the top 5 languages.
 
 | Language | Code | Comments | Blanks | Files |
 |----------|-----:|---------:|-------:|------:|
-| TypeScript | 13,073 | 1,916 | 1,936 | 56 |
-| Tsx | 8,981 | 794 | 1,036 | 18 |
+| TypeScript | 13,160 | 1,917 | 1,941 | 56 |
+| Tsx | 9,004 | 794 | 1,036 | 18 |
 | Json | 6,958 | 0 | 11 | 42 |
 | Scheme | 27 | 5 | 10 | 1 |
 | Toml | 2 | 0 | 0 | 1 |
@@ -32,27 +32,27 @@ Total: **29,041** lines of code across **118** files in the top 5 languages.
 
 ## Release
 
-- **Latest**: `critique@0.2.1` (2026-09-24)
-- **Last commit**: 2026-09-24
+- **Latest**: `critique@0.3.1` (2026-09-27)
+- **Last commit**: 2026-09-27
 
 ## Popularity
 
-- **Stars**: 1,270 · **Forks**: 37 · **Open issues**: 29 · **Contributors**: 10
+- **Stars**: 1,271 · **Forks**: 37 · **Open issues**: 29 · **Contributors**: 10
 
 ## Totals (cumulative)
 
-- **Releases**: 45 · **Merged PRs**: 10 · **Open PRs**: 1 · **Closed issues**: 20 · **Open issues**: 9 · **Commits**: 466
+- **Releases**: 46 · **Merged PRs**: 10 · **Open PRs**: 1 · **Closed issues**: 20 · **Open issues**: 9 · **Commits**: 470
 
 ## Recent activity
 
 | Window | Since | Releases | Merged PRs | Open PRs | Closed issues | Open issues | Commits |
 |---|---|---:|---:|---:|---:|---:|---:|
-| 30d | 2026-08-28 | 1 | 0 | 0 | 0 | 0 | 2 |
-| last60d | 2026-07-29 | 1 | 0 | 0 | 1 | 0 | 8 |
-| 90d | 2026-06-29 | 1 | 0 | 0 | 1 | 0 | 9 |
-| last180d | 2026-03-31 | 2 | 2 | 0 | 2 | 5 | 24 |
-| 360d | 2025-10-02 | 45 | 10 | 1 | 20 | 9 | 432 |
-| last720d | 2024-10-07 | 45 | 10 | 1 | 20 | 9 | 466 |
+| 30d | 2026-08-29 | 2 | 0 | 0 | 0 | 0 | 6 |
+| last60d | 2026-07-30 | 2 | 0 | 0 | 1 | 0 | 12 |
+| 90d | 2026-06-30 | 2 | 0 | 0 | 1 | 0 | 13 |
+| last180d | 2026-04-01 | 3 | 2 | 0 | 2 | 5 | 28 |
+| 360d | 2025-10-03 | 46 | 10 | 1 | 20 | 9 | 436 |
+| last720d | 2024-10-08 | 46 | 10 | 1 | 20 | 9 | 470 |
 
 ## Improve this data
 
@@ -63,4 +63,4 @@ Install metadata for critique lives in the [x-cmd/install](https://github.com/x-
 
 The data on this page (card / loc / scorecard / release) is auto-collected by [x-cmd-install-action](https://github.com/x-cmd-install/x-cmd-install-action) and is regenerated daily. Improvements to *install behaviour* (which version gets installed, platform-specific quirks, dependencies) belong upstream in the index.
 
-_Snapshot: `data/card/260927.yml` · 2026-09-27T06:19:03Z._
+_Snapshot: `data/card/260928.yml` · 2026-09-28T06:25:20Z._
