@@ -1,9 +1,9 @@
 {
-  "url": "https://api.github.com/repos/remorses/critique/releases/397782864",
-  "assets_url": "https://api.github.com/repos/remorses/critique/releases/397782864/assets",
-  "upload_url": "https://uploads.github.com/repos/remorses/critique/releases/397782864/assets{?name,label}",
-  "html_url": "https://github.com/remorses/critique/releases/tag/critique%400.3.1",
-  "id": 397782864,
+  "url": "https://api.github.com/repos/remorses/critique/releases/415206010",
+  "assets_url": "https://api.github.com/repos/remorses/critique/releases/415206010/assets",
+  "upload_url": "https://uploads.github.com/repos/remorses/critique/releases/415206010/assets{?name,label}",
+  "html_url": "https://github.com/remorses/critique/releases/tag/critique%400.4.0",
+  "id": 415206010,
   "author": {
     "login": "remorses",
     "id": 31321188,
@@ -25,20 +25,20 @@
     "user_view_type": "public",
     "site_admin": false
   },
-  "node_id": "RE_kwDOP-qVg84Xta9Q",
-  "tag_name": "critique@0.3.1",
+  "node_id": "RE_kwDOP-qVg84Yv4p6",
+  "tag_name": "critique@0.4.0",
   "target_commitish": "main",
-  "name": "critique@0.3.1",
+  "name": "critique@0.4.0",
   "draft": false,
   "immutable": false,
   "prerelease": false,
-  "created_at": "2026-09-27T19:23:58Z",
-  "updated_at": "2026-09-27T19:34:59Z",
-  "published_at": "2026-09-27T19:34:59Z",
+  "created_at": "2026-10-16T17:24:25Z",
+  "updated_at": "2026-10-16T17:24:36Z",
+  "published_at": "2026-10-16T17:24:36Z",
   "assets": [
 
   ],
-  "tarball_url": "https://api.github.com/repos/remorses/critique/tarball/critique@0.3.1",
-  "zipball_url": "https://api.github.com/repos/remorses/critique/zipball/critique@0.3.1",
-  "body": "1. **View a GitHub pull request without a local checkout.** Pass a PR URL to open its diff in the terminal, or combine it with `--web` to share a preview. The URL also works with `--pdf`, `--image`, and `--filter`.\n\n   ```bash\n   critique https://github.com/remorses/sigillo/pull/19 --web \"Sigillo PR #19\"\n   ```\n\n   Public PRs work without login. For private PRs, sign in with `gh auth login` or set `GH_TOKEN` or `GITHUB_TOKEN`."
+  "tarball_url": "https://api.github.com/repos/remorses/critique/tarball/critique@0.4.0",
+  "zipball_url": "https://api.github.com/repos/remorses/critique/zipball/critique@0.4.0",
+  "body": "\n1. **Password protected web links.** Pass `--password` or set `CRITIQUE_PASSWORD` with `--web` (also works with `critique review --web`). Viewers type the password once; the browser remembers every password that worked, so later links shared with the same password open without asking.\n\n   ```bash\n   critique --web --password 'hunter2'\n\n   # or for every upload\n   export CRITIQUE_PASSWORD='hunter2'\n   critique --web\n   ```\n\n   Protected links have no social preview image. The comments, `.patch`, `/raw` and `/annotations` endpoints need the password too. Scripts send it in a header:\n\n   ```bash\n   curl -H 'X-Critique-Password: hunter2' \"$CRITIQUE_URL.patch\"\n   ```"
 }
