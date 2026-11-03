@@ -1,9 +1,9 @@
 {
-  "url": "https://api.github.com/repos/remorses/critique/releases/415206010",
-  "assets_url": "https://api.github.com/repos/remorses/critique/releases/415206010/assets",
-  "upload_url": "https://uploads.github.com/repos/remorses/critique/releases/415206010/assets{?name,label}",
-  "html_url": "https://github.com/remorses/critique/releases/tag/critique%400.4.0",
-  "id": 415206010,
+  "url": "https://api.github.com/repos/remorses/critique/releases/431906158",
+  "assets_url": "https://api.github.com/repos/remorses/critique/releases/431906158/assets",
+  "upload_url": "https://uploads.github.com/repos/remorses/critique/releases/431906158/assets{?name,label}",
+  "html_url": "https://github.com/remorses/critique/releases/tag/critique%400.5.0",
+  "id": 431906158,
   "author": {
     "login": "remorses",
     "id": 31321188,
@@ -25,20 +25,20 @@
     "user_view_type": "public",
     "site_admin": false
   },
-  "node_id": "RE_kwDOP-qVg84Yv4p6",
-  "tag_name": "critique@0.4.0",
+  "node_id": "RE_kwDOP-qVg84Zvl1u",
+  "tag_name": "critique@0.5.0",
   "target_commitish": "main",
-  "name": "critique@0.4.0",
+  "name": "critique@0.5.0",
   "draft": false,
   "immutable": false,
   "prerelease": false,
-  "created_at": "2026-10-16T17:24:25Z",
-  "updated_at": "2026-10-16T17:24:36Z",
-  "published_at": "2026-10-16T17:24:36Z",
+  "created_at": "2026-11-02T19:57:09Z",
+  "updated_at": "2026-11-02T19:57:49Z",
+  "published_at": "2026-11-02T19:57:49Z",
   "assets": [
 
   ],
-  "tarball_url": "https://api.github.com/repos/remorses/critique/tarball/critique@0.4.0",
-  "zipball_url": "https://api.github.com/repos/remorses/critique/zipball/critique@0.4.0",
-  "body": "\n1. **Password protected web links.** Pass `--password` or set `CRITIQUE_PASSWORD` with `--web` (also works with `critique review --web`). Viewers type the password once; the browser remembers every password that worked, so later links shared with the same password open without asking.\n\n   ```bash\n   critique --web --password 'hunter2'\n\n   # or for every upload\n   export CRITIQUE_PASSWORD='hunter2'\n   critique --web\n   ```\n\n   Protected links have no social preview image. The comments, `.patch`, `/raw` and `/annotations` endpoints need the password too. Scripts send it in a header:\n\n   ```bash\n   curl -H 'X-Critique-Password: hunter2' \"$CRITIQUE_URL.patch\"\n   ```"
+  "tarball_url": "https://api.github.com/repos/remorses/critique/tarball/critique@0.5.0",
+  "zipball_url": "https://api.github.com/repos/remorses/critique/zipball/critique@0.5.0",
+  "body": "1. **Password links are end-to-end encrypted.** With `--password` (or `CRITIQUE_PASSWORD`), the CLI encrypts the HTML and the patch on your machine before upload. critique.work stores only ciphertext and never receives the password, so not even I (the person running critique.work) or Cloudflare can read the diff. Viewers type the password once and their browser decrypts.\n\n   ```bash\n   critique --web --password 'a long passphrase only you share'\n   ```\n\n   AES-256-GCM, key from PBKDF2-SHA256 (600,000 rounds). Agents read the patch with the curl command critique prints after upload (also `curl` in `--json`). The cookie holds a key for this diff only, never the password:\n\n   ```bash\n   curl -b 'critique_key=<key>' 'https://critique.work/v/<id>.patch'\n   ```\n\n   Breaking: the `X-Critique-Password` header is gone, critique 0.4.0 can no longer upload password links, and password links made with 0.4.0 no longer open. Use 12+ characters: anyone with the ciphertext can guess short passwords offline.\n\n2. **Privacy policy and terms** at https://critique.work/privacy and https://critique.work/terms.\n\n3. **Faster first view of new links.** Diffs now live in Cloudflare R2 with a cache in front. The unused comments widget is removed.\n\nFixes https://github.com/remorses/critique/issues/51"
 }
